@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "494167a4-71eb-4b11-a0ac-a8a8f029bd08",
+		"name": "RS_GateEntryCreation_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32536761"
+	},
+	"item": [
+		{
+			"name": "generateAuthToken",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "clientId",
+						"value": "2depmDjPOgW27OsL5pHNydmJUIqNV8Lv",
+						"type": "text"
+					},
+					{
+						"key": "secretKey",
+						"value": "LhmUIJObDOVrBz/wRhYOl9ATrW0y/Nl3lIU8XNOnEyA=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rs.vastcommerce.in/rscane/control/generateAuthToken",
+					"protocol": "https",
+					"host": [
+						"rs",
+						"vastcommerce",
+						"in"
+					],
+					"path": [
+						"rscane",
+						"control",
+						"generateAuthToken"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-gateEntryDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJ2YXN0Y29tbWVyY2UiLCJpYXQiOjE3MDczODczNDcsInN1YiI6IlVzZXJBdXRob3JpemF0aW9uIiwiaXNzIjoidmFzdHByby5pbiIsInVzZXJMb2dpbklkIjoic2FwY2xpZW50QHZhc3Rwcm8uaW4iLCJhdXRoRG9tYWluTmFtZSI6InJzLnZhc3Rjb21tZXJjZS5pbiIsImV4cCI6MjAyMjc0NzM0N30.Haq2wlLxhydaQ61naGgZtsSWi9_HDoOwKB4OKCDtJX_WPLZId54wF39Z_dD2rzM_dTGHG4YcFt4uVwF68mvYZg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rfid",
+							"value": "RE0040100019D0CA1",
+							"type": "text"
+						},
+						{
+							"key": "uploadedFile_1",
+							"type": "file",
+							"src": "/C:/Users/Aneesh-47/Downloads/images3.jpg"
+						},
+						{
+							"key": "uploadedFile_2",
+							"type": "file",
+							"src": "/C:/Users/Aneesh-47/Downloads/images1.jpg"
+						},
+						{
+							"key": "uploadedFile_3",
+							"type": "file",
+							"src": "/C:/Users/Aneesh-47/Downloads/images.jpg"
+						},
+						{
+							"key": "uploadedFile_4",
+							"type": "file",
+							"src": "/C:/Users/Aneesh-47/Downloads/Lorry1.jpg"
+						},
+						{
+							"key": "uploadedFile_5",
+							"type": "file",
+							"src": "/C:/Users/Aneesh-47/Downloads/2.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://rs.vastcommerce.in/api/rest/rs/v1/create-gateEntry-details",
+					"protocol": "https",
+					"host": [
+						"rs",
+						"vastcommerce",
+						"in"
+					],
+					"path": [
+						"api",
+						"rest",
+						"rs",
+						"v1",
+						"create-gateEntry-details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
